@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ParallaxEffect</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="parallax">
+            <h2>DIMPAL</h2>
+        </div>
+        <div>
+            <h2>DIKSHA</h2>
+        </div>
+        <div>
+            <h2>YOGESH</h2>
+        </div>
+        <div>
+            <h2>NEHA</h2>
+        </div>
+    </body>
+    <script>
+        const parallax = document.getElementById('parallax');
+        window.addEventListener('scroll',()=>{
+        let offset = window.pageYOffset;
+        parallax.style.backgroundPositionY = offset*0.7+"px";
+        })
+    </script>
+</html>
